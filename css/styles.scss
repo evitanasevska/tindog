@@ -1,0 +1,257 @@
+body {
+  font-family: "Montserrat";
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  margin-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 20px; //shifts nav bar to left a lil bit
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  //margin-left: 40px;
+  font-weight: 100;
+  padding: 0;
+}
+
+/* Section: Title */
+
+#title {
+  background-image: linear-gradient(to right, #fe3c72, #ff6c3b);
+  .navbar {
+    a {
+      color: white;
+      &:hover {
+        text-decoration: line-through;
+        color: #ff6c3b;
+        text-decoration-color: #ff6c3b;
+        background-color: white;
+      }
+    }
+    .navbar-brand:hover {
+      text-decoration: none;
+      color: white;
+      background-color: transparent;
+    }
+  }
+
+  .title-txt {
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.5rem;
+      line-height: 1.5;
+      font-weight: 900;
+      color: white;
+    }
+  }
+
+  .img-pos {
+    position: relative;
+  }
+
+  .title-img {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 0;
+    left: 75px;
+  }
+
+  .container-fluid {
+    //top left&right bottom
+    padding: 3% 15% 7%;
+  }
+}
+
+/* Download buttons */
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* Section: Features */
+
+#features {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+  position: relative;
+
+  .feature-icon {
+    font-size: 4rem;
+    color: #bc4ffc;
+    :hover {
+      color: #943cc7;
+    }
+  }
+
+  .feature {
+    text-align: center;
+    padding: 50px 50px;
+    h3 {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      margin: 20px 0;
+    }
+
+    p {
+      color: #8f8f8f;
+    }
+  }
+}
+
+/* Section: Testemonials */
+
+#testimonials {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #ff6c3b;
+  color: white;
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  .carousel-item {
+    padding: 5% 15%;
+  }
+}
+
+/* Section: Press */
+
+#press {
+  background-color: #ff6c3b;
+  text-align: center;
+  padding-bottom: 100px;
+  img {
+    width: 13%;
+    margin: 0 20px 0;
+  }
+}
+
+/* Section: Pricing */
+
+#pricing {
+  //section paddind
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  //main title
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  //main title and paragraph edit
+  .plan-title {
+    padding-bottom: 20px;
+    p {
+      padding-top: 10px;
+    }
+  }
+
+  /* Pricing cards */
+
+  //button position fix
+  .card-fix {
+    margin-bottom: 57px;
+  }
+
+  .card-body {
+    //removes space from border to card content
+    padding: 0;
+    //price
+    h2 {
+      //prevent text from breaking into multiple lines
+      white-space: nowrap;
+      font-size: 2rem;
+      padding: 30px;
+    }
+  }
+
+  .last {
+    h2 {
+      //the last card had one extra feature, this makes it look more like the others
+      padding-bottom: 5px;
+    }
+  }
+
+  //pervents button from touching the border
+  .d-grid {
+    margin: 5% 10%;
+  }
+
+  //distance between cards
+  .d-flex {
+    margin-bottom: 30px;
+  }
+}
+
+/* Section: CTA */
+
+#cta {
+  background-image: linear-gradient(to right, #ff6c3b, #bc4ffc,);
+  text-align: center;
+  h3 {
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+    padding: 0 100px;
+  }
+}
+
+/* Section: Footer */
+
+#footer {
+  background-color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #8f8f8f;
+  span {
+    font-size: 1.3rem;
+    color: black;
+    margin: auto 10px;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+    .title-img {
+      position: static;
+      transform: rotate(0);
+      margin-top: 1.5rem;
+    }
+  }
+}
